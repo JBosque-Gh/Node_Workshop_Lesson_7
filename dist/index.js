@@ -32843,7 +32843,7 @@ try {
   const jsNum1 = Number(core.getInput('number1') || 0);
   const jsNum2 = Number(core.getInput('number2') || 0);
   result = parseInt(jsNum1) + parseInt(jsNum2);
-  core.setOutput('reult', result);
+  core.setOutput('result', result);
 } catch (error) {
   core.setFailed(error.message);
 }
