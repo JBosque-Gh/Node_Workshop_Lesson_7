@@ -1,10 +1,11 @@
 const core = require('@actions/core');
+const github = require('@actions/github');
 
 try {
   const n1 = Number(core.getInput('number1') || 0);
   const n2 = Number(core.getInput('number2') || 0);
-  const sum = n1 + n2;
-  core.setOutput('reult', String(sum));
+  result = parseInt(jsNum1) + parseInt(jsNum2);
+  core.setOutput('reult', result);
 } catch (error) {
   core.setFailed(error.message);
 }
